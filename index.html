@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Portfolio website</title>
+      <link rel="stylesheet" href="style.css" />
+      <script
+         src="https://kit.fontawesome.com/0a0a50aa02.js"
+         crossorigin="anonymous"></script>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+         integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"></script>
+   </head>
+
+   <body>
+      <div id="header">
+         <div class="container">
+            <nav>
+               <!-- <img src="#" class="logo"> -->
+               <ul id="sidemenu">
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <i class="fas fa-times" onclick="closemenu()"></i>
+               </ul>
+               <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+               <p>
+                  Junior Web Developer
+                  <span><ul></ul></span>
+               </p>
+               <h1><span>Constantin Bagrin</span><br /></h1>
+            </div>
+         </div>
+      </div>
+      <!------------------------------ -----------about------------ -->
+      <div id="about">
+         <div class="container">
+            <div class="row">
+               <div class="about-col-1">
+                  <figure><img src="photos/img3.jpg" id="foto" /></figure>
+               </div>
+               <div class="about-col-2">
+                  <h1 class="sub-title">About Me</h1>
+                  <p>
+                     After 20 year of experience in the construction industry, I
+                     have decided to move my career to the IT industry. With a
+                     unique and diverse background, including 2 years of
+                     military college and 2 years of service in the army, I'm
+                     very motivated and disciplined to worked to the best of my
+                     ability. With a genuine passion for technology and the role
+                     it plays in advancing businesses and society, I'm eager to
+                     contribute my talents to an innovative and dynamic team. A
+                     quick and confident learner that can adapt to solve new
+                     problems in an efficient and calm manner even under
+                     pressure. Exceptional communication skills and strong
+                     organisational skills allow me to work great with a team
+                     and independently when necessary.
+                  </p>
+                  <div class="tab-titles">
+                     <p
+                        class="tab-links active-link"
+                        onclick="opentab('skills')">
+                        Skills
+                     </p>
+                     <p class="tab-links" onclick="opentab('experience')">
+                        Experience
+                     </p>
+                     <p class="tab-links" onclick="opentab('education')">
+                        Education
+                     </p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                     <ul>
+                        <li>
+                           Ability to work under pressure and meet
+                              deadlines,to develop cross-browser compatible
+                              webpages 
+                           <br />Analitical thinking,... excelellent
+                           communication skills to work with teams and
+                           stakeholders
+                        </li>
+                        <li>
+                           
+                              HTML CSS JavaScript Reactjs Php MySQL in
+                              progress
+                           <br />Ability to learn new technologies
+                           quickly,...take initiative to find solutions to
+                           problems
+                        </li>
+                        <li>
+                            Attention to detail<br />Strong
+                           problem-solving skills,... ability to work in a
+                           fast-paced environment and deliver project on time.
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                     <ul>
+                        <li>
+                           
+                              Valuable transferable skills that can be applied
+                              to the world of IT
+                           <br /> my attention to detail, ability to work well
+                           under pressure, and strong work ethic will serve well
+                           as i will continue to develop my technical skills in
+                           web development
+                        </li>
+                        <li>
+                           My prior experiences and dedication to
+                              learning
+                           <br />
+                           are well on my way to becoming a successful and
+                           well-rounded IT professional.
+                        </li>
+                        <li>
+                            Transferrable skills to the IT industry
+                           <br />where problem-solving and critical thinking
+                           are highly valued.
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                     <ul>
+                        <li>
+                           2 Years military college and 2 into the
+                              army
+                           <br />World class education.
+                        </li>
+                        <li>
+                           Strong sence of discipline<br />Focus
+                           and attention to detail.
+                        </li>
+                        <li>
+                           <span
+                              >These experiences have undoubtedly shaped me
+                              into
+                           <br />disciplined, focused, and driven individual
+                           who is poised for success in any field.
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- --------------------services------------------------------------------- -->
+      <div id="services">
+         <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+               <div>
+                  <i class="fa-solid fa-code"></i>
+                  <h2>Web Design</h2>
+                  <p>
+                     Create beautiful, functional websites that are both
+                     aesthetically pleasing and user-friendly. My work requires
+                     an eye for design, a solid understanding of user
+                     experience, and technical expertise in areas such as HTML,
+                     CSS, and JavaScript.
+                  </p>
+                  <a href="https://en.wikipedia.org/wiki/Web_design"
+                     ><i class="fa-solid fa-globe"></i
+                  ></a>
+               </div>
+               <div>
+                  <i class="fa-solid fa-crop"></i>
+                  <h2>UI/UX Design</h2>
+                  <p>
+                     Creating products and interfaces that are intuitive, simple
+                     and efficient,the visual design of the product interface.
+                  </p>
+                  <a
+                     href="https://en.wikipedia.org/wiki/User_experience_design#:~:text=Unlike%20user%20interface%20design%2C%20which,brand%20perception%2C%20and%20overall%20performance."
+                     ><i class="fa-solid fa-globe"></i
+                  ></a>
+               </div>
+               <div>
+                  <i class="fa-brands fa-app-store"></i>
+                  <h2>Visual Design</h2>
+                  <p>
+                     Design combines aesthetics and functionality, controls,
+                     menus, buttons and areas of a screen where they perform an
+                     action.
+                  </p>
+                  <a
+                     href="https://en.wikipedia.org/wiki/Visual_design_elements_and_principles"
+                     ><i class="fa-solid fa-globe"></i
+                  ></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- -------------portfolio------------------------ -->
+      <div id="portfolio">
+         <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+               <div class="work">
+                  <img src="photos/work-1.png" />
+                  <div class="layer">
+                     <h3>Monkeys emoji(New Ideas)</h3>
+                     <p>
+                        Are you looking for the perfect career opportunity? Look
+                        no further than our work agency! We specialize in
+                        connecting talented individuals with employers all over
+                        the world
+                     </p>
+                     <a href="doc.html"
+                        ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                     ></a>
+                  </div>
+               </div>
+               <div class="work">
+                  <img src="photos/work-2.png" />
+                  <div class="layer">
+                     <h3>RyanAir Check List(New Ideas)</h3>
+                     <p>
+                        --- HD quality video ,Endless entertainment,Affordable
+                        subscription plans, Stream on any device-----
+                     </p>
+                     <a href="index2.html"
+                        ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                     ></a>
+                  </div>
+               </div>
+               <div class="work">
+                  <img src="photos/work-3.png" />
+                  <div class="layer">
+                     <h3>Start Up Website(New ideas)</h3>
+                     <p>
+                        Are you looking to take your IT business to the next
+                        level? Innovative, Security, Revolutionary,
+                        Cutting-edge,
+                     </p>
+                     <a href="index3.html"
+                        ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                     ></a>
+                  </div>
+               </div>
+            </div>
+            <a href="https://github.com/constantin2109" class="btn">See more</a>
+         </div>
+      </div>
+      <!-- --------------contact ---------------------------------------- -->
+      <div id="contact">
+         <div class="container">
+            <div class="row">
+               <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p>
+                     <i class="fa-solid fa-paper-plane"></i
+                     ><a href="mailto:constantinbagrin@gmail.com">constantinbagrin@gmail.com</a>
+                  </p>
+                  <p>
+                     <i class="fa-sharp fa-solid fa-square-phone"></i
+                     ><a href="tel:00353863730786">+353863730786</a>
+                  </p>
+                  <div class="social-icons">
+                     <a href="https://www.linkedin.com/feed/"
+                        ><i class="fa-brands fa-linkedin"></i
+                     ></a>
+                     <a href="https://github.com/constantin2109"><i class="fab fa-github" style='font-size:30px'></i></a> 
+                     <!-- <a href=""><i class="fa-brands fa-linkedin"></i></a> -->
+                     <!-- <a href=""><i class="fa-brands fa-linkedin"></i></a> -->
+                     <!--  <a href=""><i class="fa-brands fa-linkedin"></i></a> -->
+                     <!-----------------------button cv start--------------------------------------------------------------------->
+                  </div>
+                  <!-- k<a href="cv.pdf" class="btn btn2" id="invoice" onclick="generatePDF">Download CV</a> -->
+               </div>
+               <!--------------------button close--------------------------------------------------------------------------->
+               <div class="contact-right">
+                  <form name="submit-to-google-sheet">
+                     <input
+                        type="text"
+                        name="Name"
+                        placeholder="Your name"
+                        reguired />
+                     <input
+                        type="email"
+                        name="Email"
+                        placeholder="Your email"
+                        reguired />
+                     <textarea
+                        name="Message"
+                        placeholder="Your message"
+                        rows="6"></textarea>
+                     <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+                  <span id="msg"></span>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <p>
+               Constantins.Made with
+               <i class="fa-sharp fa-solid fa-heart"></i> Thanks for visiting my
+               website !
+            </p>
+         </div>
+      </div>
+      <script>
+         var tablinks = document.getElementsByClassName("tab-links")
+         var tabcontents = document.getElementsByClassName("tab-contents")
+         function opentab(tabname) {
+            for (tablink of tablinks) {
+               tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+               tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+         }
+
+         var sidemeu = document.getElementById("sidemenu")
+         function openmenu() {
+            sidemeu.style.right = "0"
+         }
+         function closemenu() {
+            sidemeu.style.right = "-200px"
+         }
+
+         const scriptURL =
+            "https://script.google.com/macros/s/AKfycbxhnU8nolMALW-X2gQpWhMoj1sXhoZmg6IVuB4ng7LLSq8Ei3mQw8tLvcU5JNOEn68c/exec"
+         const form = document.forms["submit-to-google-sheet"]
+         const msg = document.getElementById("msg")
+
+         form.addEventListener("submit", (e) => {
+            e.preventDefault()
+            fetch(scriptURL, { method: "POST", body: new FormData(form) })
+               .then((response) => {
+                  msg.innerHTML = "Message sent successfully"
+                  setTimeout(function () {
+                     msg.innerHTML = ""
+                  }, 2000)
+                  form.reset()
+               })
+               .catch((error) => console.error("Error!", error.message))
+         })
+
+         function generatePDF() {
+            const element = document.getElementById("invoice")
+            html2pdf().from(element).save()
+         }
+      </script>
+   </body>
+</html>
